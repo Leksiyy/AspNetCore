@@ -7,20 +7,23 @@
     <projectFile profileName="https">homework1/homework1.csproj</projectFile>
     <projectFile profileName="http">homework2/homework2.csproj</projectFile>
     <projectFile profileName="https">homework2/homework2.csproj</projectFile>
+    <projectFile profileName="http">homework3/homework3.csproj</projectFile>
+    <projectFile profileName="https">homework3/homework3.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af3f2fc1-5085-43d1-9404-92342de5394d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/homework2/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework2/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework2/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework2/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework2/homework2.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework3/Middleware/TokenMiddleware.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework3/Models/Book.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework3/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework3/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework3/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework3/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework3/homework3.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AspNetCore.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AspNetCore.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework1/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/homework1/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,25 +68,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.AspNetCore: https.executor": "Debug",
-    ".NET Launch Settings Profile.homework1: https.executor": "Debug",
-    ".NET Launch Settings Profile.homework2: https.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "XThreadsFramesViewSplitterKey": "0.5017668",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "HotReloadSettingsPage",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.AspNetCore: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.homework1: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.homework2: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.homework3: https.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.5017668&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;HotReloadSettingsPage&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.homework2: https">
+}</component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.homework3: https">
     <configuration name="AspNetCore" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -210,6 +214,36 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="homework3: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/homework3/homework3.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="homework3: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/homework3/homework3.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="https" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -225,7 +259,8 @@
       <workItem from="1731083384251" duration="1481000" />
       <workItem from="1731177915013" duration="2540000" />
       <workItem from="1731515841570" duration="11723000" />
-      <workItem from="1731764550377" duration="12103000" />
+      <workItem from="1731764550377" duration="16769000" />
+      <workItem from="1731938389490" duration="287000" />
     </task>
     <servers />
   </component>
