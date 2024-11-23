@@ -1,65 +1,28 @@
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
- 
-List<Person> people = new List<Person>()
+
+// app.Map("/", () => "Index page");
+// app.Map("/about", () => "About page");
+// app.Map("/contact", () => "Contact page");
+
+
+//app.Map("/users/{**info}", (string info) => $"Info: {info}.");
+
+//app.Map("{controller=Home}/{action=Index}/{id?}", (string controller, string action, string id) => $"Controller: {controller}\nAction: {action}\nId: {id}");
+
+// app.Map("/routes", async (IEnumerable<EndpointDataSource> endpoints, HttpContext context) =>
+// {
+//     await context.Response.WriteAsync(String.Join("\n", endpoints.SelectMany(e => e.Endpoints)));
+// });
+
+app.Map("{number:int}", async context =>
 {
-    new Person("Tom", 30),
-    new Person("Kate", 19)
-};
- 
-app.Run(async (context) =>
+    context.Response.WriteAsync("Routed to the int endpoint");
+}).Add(e => ((RouteEndpointBuilder)e).Order = 1);
+
+app.Map("{number:double}", async context =>
 {
-    var path = context.Request.Path.ToString();
-    var response = context.Response;
-    var request = context.Request;
- 
-    switch (path.ToLower())
-    {
-        case "/": { await response.WriteAsync("Welcome to Users API"); break; }
-        case "/adduser":
-        {
-            string? name = request.Query["name"];
-            int age = 0;
-            if (!int.TryParse(request.Query["age"], out age))
-            {
-                await response.WriteAsJsonAsync("Not valid age");
-            }
-            var user = new Person(name, age);
-            people.Add(user);
-            await response.WriteAsJsonAsync(user);
-            break;
-        }
-        case "/getuser":
-        {
-            await response.WriteAsJsonAsync(people.FirstOrDefault(e => e.Id == request.Query["id"]));
-            break;
-        }
-        case "/removeuser":
-        {
-            var user = people.FirstOrDefault(e => e.Id.ToString() == request.Query["id"]);
-            if (user != null)
-            {
-                people.Remove(user);
-            }
-            await response.WriteAsJsonAsync(user);
-            break;
-        }
-        case "/allusers": { await response.WriteAsJsonAsync(people); break; }
-        default: { await response.WriteAsJsonAsync("Not found"); break; }
-    }
-});
- 
-app.Run();
- 
-class Person
-{
-    public Guid Id { get; set; } = Guid.NewGuid();
-    public string Name { get; set; }
-    public int Age { get; set; }
- 
-    public Person(string name, int age)
-    {
-        Name = name;
-        Age = age;
-    }
-}
+    context.Response.WriteAsync("Routed to the double endpoint");
+}).Add(e => ((RouteEndpointBuilder)e).Order = 2);
+
+app.Run(); 

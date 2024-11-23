@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework3", "homework3\home
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework4", "homework4\homework4.csproj", "{C7B57BA4-40FF-4627-8860-831BBC0B3D81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework5", "homework5\homework5.csproj", "{775A674F-1DDF-47D6-A178-1404DF29A72B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{C7B57BA4-40FF-4627-8860-831BBC0B3D81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7B57BA4-40FF-4627-8860-831BBC0B3D81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7B57BA4-40FF-4627-8860-831BBC0B3D81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{775A674F-1DDF-47D6-A178-1404DF29A72B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{775A674F-1DDF-47D6-A178-1404DF29A72B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{775A674F-1DDF-47D6-A178-1404DF29A72B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{775A674F-1DDF-47D6-A178-1404DF29A72B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2CB80E68-E33C-4E99-8C4A-491766A11A39} = {52A8E029-34C8-432B-B270-E2C3D7ED0E23}
