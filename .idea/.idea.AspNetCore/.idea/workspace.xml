@@ -15,18 +15,22 @@
     <projectFile profileName="https">homework4/homework4.csproj</projectFile>
     <projectFile profileName="http">homework5/homework5.csproj</projectFile>
     <projectFile profileName="https">homework5/homework5.csproj</projectFile>
+    <projectFile profileName="http">homework6/homework6.csproj</projectFile>
+    <projectFile profileName="https">homework6/homework6.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af3f2fc1-5085-43d1-9404-92342de5394d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AspNetCoreMVC/Controllers/CompanyController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AspNetCoreMVC/Models/Person.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AspNetCoreMVC/Views/Company/About.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AspNetCoreMVC/Views/Company/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework6/Controllers/ProductController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework6/Models/Product.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework6/Views/Product/Create.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources/87c31aea-86cf-45e0-b8e5-54e0102e4bec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources/87c31aea-86cf-45e0-b8e5-54e0102e4bec.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspNetCore.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AspNetCore.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework6/homework6.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/homework6/homework6.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +69,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -82,6 +89,7 @@
     ".NET Launch Settings Profile.homework2: https.executor": "Run",
     ".NET Launch Settings Profile.homework3: https.executor": "Run",
     ".NET Launch Settings Profile.homework4: https.executor": "Run",
+    ".NET Launch Settings Profile.homework6: https.executor": "Run",
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "XThreadsFramesViewSplitterKey": "0.5017668",
@@ -93,9 +101,15 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "HotReloadSettingsPage",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver",
+      "sqlserver.localdb"
+    ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.AspNetCoreMVC: https">
+  <component name="RunManager" selected=".NET Launch Settings Profile.homework6: https">
     <configuration name="AspNetCore" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -388,7 +402,7 @@
       <workItem from="1731177915013" duration="2540000" />
       <workItem from="1731515841570" duration="11723000" />
       <workItem from="1731764550377" duration="16769000" />
-      <workItem from="1731938389490" duration="28894000" />
+      <workItem from="1731938389490" duration="33485000" />
     </task>
     <servers />
   </component>
