@@ -1,0 +1,30 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<div class="text-center">
+    <form method="post" asp-action="ProcessForm">
+        <label>Колличество валюты:</label>
+        <input type="number" name="count" required>
+        <label for="currency1">Из какой валюты:</label>
+        <select id="currency1" name="Name1">
+            @foreach (var c in ViewBag.Currency)
+            {
+                <option value="@c">@c</option>
+            }
+        </select>
+        <label for="currency2">В какую валюту:</label>
+        <select id="currency2" name="Name2">
+            @foreach (var c in ViewBag.Currency)
+            {
+                <option value="@c">@c</option>
+            }
+        </select>
+        <button type="submit">send</button>
+    </form>
+</div>
+
+@if (ViewBag.Result is not null)
+{
+    <p>@ViewBag.Result</p>
+}
