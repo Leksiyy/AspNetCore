@@ -11,6 +11,8 @@
     <projectFile profileName="https">AspNetCoreMVC/AspNetCoreMVC.csproj</projectFile>
     <projectFile profileName="http">homework1/homework1.csproj</projectFile>
     <projectFile profileName="https">homework1/homework1.csproj</projectFile>
+    <projectFile profileName="http">homework10/homework10.csproj</projectFile>
+    <projectFile profileName="https">homework10/homework10.csproj</projectFile>
     <projectFile profileName="http">homework2/homework2.csproj</projectFile>
     <projectFile profileName="https">homework2/homework2.csproj</projectFile>
     <projectFile profileName="http">homework3/homework3.csproj</projectFile>
@@ -33,254 +35,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af3f2fc1-5085-43d1-9404-92342de5394d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/ASPEntityFrameworkCore.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/Controllers/HomeController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/Data/ApplicationContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/Models/ErrorViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/Models/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/Views/Home/Create.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/Views/Home/Create.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/Views/Home/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/Views/Home/Privacy.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/Views/Shared/Error.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/Views/Shared/_Layout.cshtml.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/Views/_ViewImports.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/Views/_ViewStart.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/css/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/js/site.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/jquery-validation/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPEntityFrameworkCore/wwwroot/lib/jquery/dist/jquery.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/ASPViewComponent.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Controllers/HomeController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Files/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Models/ErrorViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Models/SocialIcon.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Models/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/ViewComponents/HeaderViewComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/ViewComponents/PersonViewComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/ViewComponents/SocialLinksViewComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/ViewComponents/TimerViewComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/ViewComponents/UserListViewComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Views/Home/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Views/Home/Privacy.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Views/Shared/Components/SocialLinks/SocialLinks.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Views/Shared/Components/SocialLinks/SocialLinks.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Views/Shared/Components/UsersList/Default.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Views/Shared/Error.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Views/Shared/_Layout.cshtml.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Views/_ViewImports.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/Views/_ViewStart.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/css/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/js/site.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/jquery-validation/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPViewComponent/wwwroot/lib/jquery/dist/jquery.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Controllers/EasterEggController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Controllers/HomeController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Controllers/ShopController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Enum/Categories.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Models/ErrorViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Models/Product.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Service/ProductService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Views/Home/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Views/Home/Privacy.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Views/Shared/Error.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Views/Shared/_Layout.cshtml.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Views/Shop/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Views/_ViewImports.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/Views/_ViewStart.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/homework9.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/css/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/js/site.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/jquery-validation/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework9/wwwroot/lib/jquery/dist/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework9/ViewModels/HomeIndexViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework9/Views/Shop/EditProduct.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework9/Views/Shop/EditProduct.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspNetCore.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AspNetCore.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework10/Controllers/CommentController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/homework10/Controllers/CommentController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework10/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/homework10/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework10/Data/ApplicationContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/homework10/Data/ApplicationContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework10/Data/ContentInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/homework10/Data/ContentInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework10/IndexViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/homework10/IndexViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework10/Models/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/homework10/Models/Book.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework10/Models/Comment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/homework10/Models/Comment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework10/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/homework10/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework10/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/homework10/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework10/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/homework10/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework10/homework10.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/homework10/homework10.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework9/Controllers/ShopController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/homework9/Controllers/ShopController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework9/Models/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/homework9/Models/Product.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework9/Service/ProductService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/homework9/Service/ProductService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework9/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/homework9/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework9/Views/Shop/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/homework9/Views/Shop/Index.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,39 +106,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.ASPViewComponent: https.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.AspNetCore: https.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.AspNetCoreMVC: https.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.homework1: https.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.homework2: https.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.homework3: https.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.homework4: https.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.homework6: https.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.homework7: https.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.homework8: https.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.homework9: https.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.5017668&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;HotReloadSettingsPage&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.ASPEntityFrameworkCore: https.executor": "Run",
+    ".NET Launch Settings Profile.ASPViewComponent: https.executor": "Run",
+    ".NET Launch Settings Profile.AspNetCore: https.executor": "Run",
+    ".NET Launch Settings Profile.AspNetCoreMVC: https.executor": "Run",
+    ".NET Launch Settings Profile.homework10: https.executor": "Run",
+    ".NET Launch Settings Profile.homework1: https.executor": "Debug",
+    ".NET Launch Settings Profile.homework2: https.executor": "Run",
+    ".NET Launch Settings Profile.homework3: https.executor": "Run",
+    ".NET Launch Settings Profile.homework4: https.executor": "Run",
+    ".NET Launch Settings Profile.homework6: https.executor": "Run",
+    ".NET Launch Settings Profile.homework7: https.executor": "Run",
+    ".NET Launch Settings Profile.homework8: https.executor": "Debug",
+    ".NET Launch Settings Profile.homework9: https.executor": "Debug",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "XThreadsFramesViewSplitterKey": "0.5017668",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "HotReloadSettingsPage",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlserver&quot;,
-      &quot;sqlserver.localdb&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver",
+      "sqlserver.localdb"
     ]
   }
-}</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.ASPEntityFrameworkCore: https">
+}]]></component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.homework9: https">
     <configuration name="AspNetCore" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -508,6 +284,36 @@
     </configuration>
     <configuration name="AspNetCore: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/AspNetCore/AspNetCore.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="https" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="homework10: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/homework10/homework10.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="homework10: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/homework10/homework10.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
       <option name="LAUNCH_PROFILE_NAME" value="https" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -810,6 +616,9 @@
       <workItem from="1731938389490" duration="36563000" />
       <workItem from="1733240584169" duration="24005000" />
       <workItem from="1733824029416" duration="1783000" />
+      <workItem from="1733837710284" duration="758000" />
+      <workItem from="1733838592679" duration="492000" />
+      <workItem from="1733839114983" duration="15262000" />
     </task>
     <servers />
   </component>
@@ -820,5 +629,37 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/homework9/Controllers/ShopController.cs</url>
+          <line>63</line>
+          <properties documentPath="$PROJECT_DIR$/homework9/Controllers/ShopController.cs" containingFunctionPresentation="Method 'EditProduct'">
+            <startOffsets>
+              <option value="1728" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1729" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/homework9/Controllers/ShopController.cs</url>
+          <line>78</line>
+          <properties documentPath="$PROJECT_DIR$/homework9/Controllers/ShopController.cs" containingFunctionPresentation="Method 'EditProduct'">
+            <startOffsets>
+              <option value="2206" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2207" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

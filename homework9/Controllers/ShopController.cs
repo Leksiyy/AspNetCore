@@ -1,6 +1,7 @@
 using homework9.Enum;
 using homework9.Models;
 using homework9.Service;
+using homework9.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -18,26 +19,80 @@ public class ShopController : Controller
     [HttpGet]
     public IActionResult Index()
     {
-        var categories = System.Enum.GetValues(typeof(Categories))
+        ViewBag.Categories = System.Enum.GetValues(typeof(Categories))
             .Cast<Categories>()
             .Select(c => new SelectListItem
             {
                 Value = ((int)c).ToString(),
                 Text = c.ToString()
             }).ToList();
-        ViewBag.Categories = categories;
-        var products = _productService.Products.ToList();
-        return View(products);
+        
+        var model = new HomeIndexViewModel
+        {
+            Products = _productService.Products.ToList(),
+            NewProduct = new Product(),
+        };
+        return View(model);
     }
 
     [HttpPost]
-    public IActionResult AddProduct(Product product)
+    public IActionResult AddProduct(HomeIndexViewModel viewModel)
     {
-        if (ModelState.IsValid)
+        Product._staitcId++;
+        viewModel.NewProduct.Id = Product._staitcId;
+        _productService.AddProduct(viewModel.NewProduct);
+        
+        ViewBag.Categories = System.Enum.GetValues(typeof(Categories))
+            .Cast<Categories>()
+            .Select(c => new SelectListItem
+            {
+                Value = ((int)c).ToString(),
+                Text = c.ToString()
+            }).ToList();
+        
+        var model = new HomeIndexViewModel
         {
-            _productService.AddProduct(product);
-        }
-        var products = _productService.Products.ToList();
-        return RedirectToAction("Index", products);
+            Products = _productService.Products.ToList(),
+            NewProduct = new Product(),
+        };
+        
+        return View("Index", model);
+    }
+
+    [HttpGet]
+    public IActionResult EditProduct(int id)
+    {
+        ViewBag.Product = _productService.Products.FirstOrDefault(p => p.Id == id);
+        ViewBag.Categories = System.Enum.GetValues(typeof(Categories))
+            .Cast<Categories>()
+            .Select(c => new SelectListItem
+            {
+                Value = ((int)c).ToString(),
+                Text = c.ToString()
+            }).ToList();
+        
+        return View(new Product());
+    }
+
+    [HttpPost]
+    public IActionResult EditProduct(Product product)
+    {
+        _productService.EditProduct(product);
+        
+        var model = new HomeIndexViewModel
+        {
+            Products = _productService.Products.ToList(),
+            NewProduct = new Product(),
+        };
+        
+        ViewBag.Categories = System.Enum.GetValues(typeof(Categories))
+            .Cast<Categories>()
+            .Select(c => new SelectListItem
+            {
+                Value = ((int)c).ToString(),
+                Text = c.ToString()
+            }).ToList();
+        
+        return View("Index", model);
     }
 }

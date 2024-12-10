@@ -4,7 +4,8 @@ namespace homework9.Models;
 
 public class Product
 {
-    public int Id { get; set; }
+    public static int _staitcId = 0;
+    public int Id { get; set; } = _staitcId;
     public string Name { get; set; }
     public int Price { get; set; }
     public Categories Category { get; set; }

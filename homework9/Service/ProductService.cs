@@ -20,4 +20,9 @@ public class ProductService
     {
         Products.Remove(product);
     }
+
+    public void EditProduct(Product product)
+    {
+        Products[product.Id-1] = product;
+    }
 }

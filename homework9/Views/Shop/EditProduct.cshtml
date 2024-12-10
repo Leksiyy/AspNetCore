@@ -1,0 +1,39 @@
+@{
+    ViewData["Title"] = "Edit Page";
+}
+@model Product;
+<form asp-action="EditProduct" method="post">
+    <table class="table">
+        <thead>
+        <tr>
+            <th></th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Comment</th>
+            <th>Edit</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Old product</td>
+            <td>@ViewBag.Product.Id</td>
+            <td>@ViewBag.Product.Name</td>
+            <td>@ViewBag.Product.Price</td>
+            <td>@ViewBag.Product.Category</td>
+            <td>@ViewBag.Product.Comment</td>
+        </tr>
+        <tr>
+            <td>New product</td>
+            <td>@ViewBag.Product.Id</td> // can't change
+            <input type="hidden" asp-for="Id" value="@ViewBag.Product.Id">
+            <td><input type="text" class="form-control" asp-for="Name" value="@ViewBag.Product.Name"/></td>
+            <td><input type="number" class="form-control" asp-for="Price" value="@ViewBag.Product.Price"/></td>
+            <td><select asp-for="Category" asp-items="ViewBag.Categories" value="@ViewBag.Product.Category" class="form-control" ></select></td>
+            <td><input type="text" class="form-control" asp-for="Comment" value="@ViewBag.Product.Comment"/></td>
+        </tr>
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-success">Edit</button>
+</form>

@@ -1,9 +1,21 @@
+using homework10.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+IConfigurationRoot _configString = new ConfigurationBuilder().SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+    .AddJsonFile("appsettings.json").Build();
+
+builder.Services.AddDbContext<ApplicationContext>(options =>
+    options.UseSqlServer(_configString.GetConnectionString("DefaultConnection")));
+
+
 var app = builder.Build();
+
+DbInitializer.Initialize(app.Services);
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

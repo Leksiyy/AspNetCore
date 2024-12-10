@@ -1,8 +1,89 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Books";
+}
+@model IndexViewModel;
+
+<h2>Books</h2>
+
+@if (Model.Books.Any())
+{
+<table class="table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Genre</th>
+        <th>Author</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (Book book in Model.Books)
+    {
+    <tr>
+        <td>@book.Id</td>
+        <td>@book.Title</td>
+        <td>@book.Author</td>
+        <td>@book.Genre</td>
+        <td>@book.Price</td>
+    </tr>
+    }
+    </tbody>
+</table>
+}
+else
+{
+<p>No books found.</p>
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>Comments</h2>
+
+@if (Model.Comments.Any())
+{
+<table class="table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Content</th>
+        <th>Written for book..</th>
+        <th>Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var comment in Model.Comments)
+    {
+    <tr>
+        <td>@comment.Id</td>
+        <td>@comment.Content</td>
+        <td>@Model.Books.FirstOrDefault(e=>e.Id==comment.BookId).Title</td>
+        <td>@comment.Date</td>
+    </tr>
+    }
+    </tbody>
+</table>
+}
+else
+{
+<p>No products found. Add a new one!</p>
+}
+
+<h2>Add comment</h2>
+
+<form asp-action="AddComment" asp-controller="Comment" method="post">
+    <div class="form-group">
+        <label name="Content">Text here</label>
+        <textarea name="Content" required></textarea>
+    </div>
+    <div class="form-group">
+        <input type="hidden" name="Date" value="@DateTime.Now.ToString("yyyy-mm-dd hh-mm-ss")"/>
+    </div>
+    <div class="form-group">
+        <label name="BookId">Choose the title of the book</label>
+        <select name="BookId" asp-items="Model.Books.Select(e => new SelectListItem 
+                {
+                    Text = e.Title,
+                    Value = e.Id.ToString()
+                })" class="form-control"></select>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>

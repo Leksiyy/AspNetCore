@@ -1,21 +1,28 @@
 using System.Diagnostics;
+using homework10.Data;
 using Microsoft.AspNetCore.Mvc;
 using homework10.Models;
+using Microsoft.Extensions.Logging;
 
 namespace homework10.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly ApplicationContext _context;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ApplicationContext context)
     {
-        _logger = logger;
+        _context = context;
     }
-
     public IActionResult Index()
     {
-        return View();
+        var viewModel = new IndexViewModel
+        {
+            Books = _context.Books.ToList(),
+            Comments = _context.Comments.ToList(),
+        };
+        
+        return View(viewModel);
     }
 
     public IActionResult Privacy()
