@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    User alex = new User { Name = "Alex", Age = 14 };
+    User tom = new User { Name = "Tom", Age = 54 };
+}
+
+@await Component.InvokeAsync("Timer", new {includeSeconds = false});
+<p> </p>
+<vc:timer inculde-seconds="true"></vc:timer>
+<p> </p>
+@await Component.InvokeAsync("Person", new { User = alex })
+<p> </p>
+<vc:person user="tom"></vc:person>
+<p> </p>
+<vc:users-list></vc:users-list>
+<p> </p>
+<vc:header></vc:header>
+<p> </p>
+<vc:social-links></vc:social-links>
