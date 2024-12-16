@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPValidation", "ASPValidat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework11", "homework11\homework11.csproj", "{B1F9F682-1F95-46F8-AE7B-CE405BB08599}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPCookie", "ASPCookie\ASPCookie.csproj", "{D62064AA-9A27-4A42-966B-0940F829D24A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -104,6 +106,10 @@ Global
 		{B1F9F682-1F95-46F8-AE7B-CE405BB08599}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1F9F682-1F95-46F8-AE7B-CE405BB08599}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1F9F682-1F95-46F8-AE7B-CE405BB08599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62064AA-9A27-4A42-966B-0940F829D24A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62064AA-9A27-4A42-966B-0940F829D24A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62064AA-9A27-4A42-966B-0940F829D24A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62064AA-9A27-4A42-966B-0940F829D24A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2CB80E68-E33C-4E99-8C4A-491766A11A39} = {52A8E029-34C8-432B-B270-E2C3D7ED0E23}
