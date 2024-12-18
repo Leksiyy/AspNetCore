@@ -3,18 +3,15 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.Cookie.Name = "1234567";
+    options.IdleTimeout = TimeSpan.FromSeconds(5);
+});
+
 var app = builder.Build();
 
-app.Use(async (context, next) =>
-{
-    context.Items["userName"] = "Alex";
-    await next();
-});
-
-app.Run(async (context) =>
-{
-    await context.Response.WriteAsJsonAsync(context.Items["userName"]);
-});
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -24,6 +21,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseSession();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
@@ -34,6 +32,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}");
 
 app.Run();
