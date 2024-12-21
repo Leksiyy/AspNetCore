@@ -1,7 +1,7 @@
-﻿using homework12.Models;
+using homework12.Models;
 
-namespace homework12.Services
-{
+namespace homework12.Services;
+
     public class NewsService
     {
         public NewsService()
@@ -22,4 +22,3 @@ namespace homework12.Services
             return News;
         }
     }
-}

@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Theme"] = @Model;
+}
+
+@model bool
+
+<form asp-action="SetSettings" asp-controller="Settings" method="post">
+    <div class="d-flex justify-content-center">
+        <div class="form-check form-switch">
+            <input type="checkbox" id="themeSwitch" name="theme" value="true" @(Model ? "checked" : "")/>
+
+            <button class="btn btn-success" type="submit">Save</button>
+        </div>
+    </div>
+</form>
