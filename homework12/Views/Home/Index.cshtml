@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<News>
+
+<a class="btn-secondary" asp-action="Index">Настройки</a>
+
+<div class="container my-5">
+    <h1 class="mb-4 text-center">Новости</h1>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        @foreach (var news in Model)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">@news.Name</h5>
+                        <p class="card-text">
+                            @(news.Content.Length > 200 
+                                ? news.Content.Substring(0, 200) + "..."
+                                : news.Content)
+                        </p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#news-@news.GetHashCode()" aria-expanded="false" aria-controls="news-@news.GetHashCode()">
+                            Читать полностью
+                        </button>
+                        <div class="collapse mt-2" id="news-@news.GetHashCode()">
+                            <p class="card-text">@news.Content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
