@@ -1,0 +1,35 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<homework14.ViewModels.Product>
+
+<div class="container">
+    <form asp-action="SetCurrency" method="post" class="mb-4">
+        <label for="currency" class="form-label">Select Currency:</label>
+        <select id="currency" name="currency" class="form-select" onchange="this.form.submit()">
+            @foreach (var currency in ViewBag.Currencies)
+            {
+                <option value="@currency.Code">
+                @currency.Code (@currency.Code)
+            </option>
+            }
+        </select>
+    </form>
+    
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="@product.ImageUrl" class="card-img-top" alt="@product.Name">
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Name</h5>
+                        <p class="card-text">@product.Description</p>
+                        <p class="card-text">
+                            <strong>@product.Price.ToString("F2") @product.Currency</strong>
+                        </p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
