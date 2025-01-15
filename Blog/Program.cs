@@ -25,6 +25,8 @@ builder.Services.AddIdentity<User, IdentityRole>(options =>
     .AddEntityFrameworkStores<ApplicationContext>();
 
 builder.Services.AddTransient<IMembership, MembershipRepository>();
+builder.Services.AddTransient<ICategory, CategoryRepository>();
+builder.Services.AddTransient<IPublication, PublicationRepository>();
 
 var app = builder.Build();
 
@@ -35,7 +37,10 @@ using (var serviceScope = app.Services.CreateScope())
     {
         var userManager = services.GetRequiredService<UserManager<User>>();
         var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+        var context = services.GetRequiredService<ApplicationContext>();
         await RoleInitializer.InitializeAsync(userManager, roleManager);
+        await ContentInitializer.InitializeAsync(context);
+        
     }
     catch (Exception ex)
     {

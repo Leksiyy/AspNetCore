@@ -30,6 +30,9 @@
     <ul class="navbar-nav">
         @if (User.Identity.IsAuthenticated)
         {
+            <li class="navbar-nav">
+                <a class="nav-link text-dark" asp-controller="Content" asp-action="Index">Материал</a>
+            </li>
             @if (User.IsInRole("Admin"))
             {
                 <li class="nav-item">

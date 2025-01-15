@@ -17,7 +17,7 @@ public class AdminController : Controller
         this.userManager = userManager;
         this.roleManager = roleManager;
     }
-
+    
     [Route("users")]
     [HttpGet]
     public IActionResult Index() => View(userManager.Users.ToList());

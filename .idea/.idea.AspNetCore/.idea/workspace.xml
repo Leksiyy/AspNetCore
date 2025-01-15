@@ -70,8 +70,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af3f2fc1-5085-43d1-9404-92342de5394d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Blog/Controllers/ContentController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Data/ContentInitializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Helpers/UrlExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Interfaces/ICategory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Interfaces/IPublication.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Models/Category.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Models/Pages/PagedList.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Models/Pages/QueryOptions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Models/Publication.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Repository/CategoryRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Repository/PublicationRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/ViewModels/CategoryViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/ViewModels/ContentViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/ViewModels/GetPublicationViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/ViewModels/IndexViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/ViewModels/PublicationViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Views/Content/CreateCategory.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Views/Content/CreatePublication.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Views/Content/EditCategory.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Views/Content/EditPublication.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Views/Content/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Views/Home/GetPublication.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Views/Shared/_PageOptions.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/Views/Shared/_Pages.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/wwwroot/js/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources/e00459b3-df98-44ba-870d-fafbca5ddfe8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources/e00459b3-df98-44ba-870d-fafbca5ddfe8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources/e00459b3-df98-44ba-870d-fafbca5ddfe8/storage_v2/_src_/database/database.exGpag.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources/e00459b3-df98-44ba-870d-fafbca5ddfe8/storage_v2/_src_/database/database.exGpag/schema/dbo.sYMBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/Controllers/AdminController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/Data/ApplicationContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/Data/ApplicationContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +122,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -97,12 +135,12 @@
     &quot;assignee&quot;: &quot;Leksiyy&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Leksiyy/AspNetCore.git",
-    "accountId": "71286b03-4950-4db2-b562-12d6be1e44d6"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Leksiyy/AspNetCore.git&quot;,
+    &quot;accountId&quot;: &quot;71286b03-4950-4db2-b562-12d6be1e44d6&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/homework5/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a0741529c8554d199992ef9e50684668d82800/b0/c4e925fd/ThrowHelper.cs" root0="FORCE_HIGHLIGHTING" />
@@ -125,49 +163,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.ASPAuth: http.executor": "Run",
-    ".NET Launch Settings Profile.ASPCookie: https.executor": "Run",
-    ".NET Launch Settings Profile.ASPEntityFrameworkCore: https.executor": "Run",
-    ".NET Launch Settings Profile.ASPValidation: https.executor": "Run",
-    ".NET Launch Settings Profile.ASPViewComponent: https.executor": "Run",
-    ".NET Launch Settings Profile.AspNetCore: https.executor": "Run",
-    ".NET Launch Settings Profile.AspNetCoreMVC: https.executor": "Run",
-    ".NET Launch Settings Profile.Blog: https.executor": "Run",
-    ".NET Launch Settings Profile.homework10: https.executor": "Run",
-    ".NET Launch Settings Profile.homework11: https.executor": "Run",
-    ".NET Launch Settings Profile.homework12: http.executor": "Run",
-    ".NET Launch Settings Profile.homework13: http.executor": "Run",
-    ".NET Launch Settings Profile.homework13: https.executor": "Run",
-    ".NET Launch Settings Profile.homework14: http.executor": "Run",
-    ".NET Launch Settings Profile.homework1: https.executor": "Debug",
-    ".NET Launch Settings Profile.homework2: https.executor": "Run",
-    ".NET Launch Settings Profile.homework3: https.executor": "Run",
-    ".NET Launch Settings Profile.homework4: https.executor": "Run",
-    ".NET Launch Settings Profile.homework6: https.executor": "Run",
-    ".NET Launch Settings Profile.homework7: https.executor": "Run",
-    ".NET Launch Settings Profile.homework8: https.executor": "Debug",
-    ".NET Launch Settings Profile.homework9: https.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "XThreadsFramesViewSplitterKey": "0.5017668",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "HotReloadSettingsPage",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.ASPAuth: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.ASPCookie: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.ASPEntityFrameworkCore: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.ASPValidation: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.ASPViewComponent: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.AspNetCore: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.AspNetCoreMVC: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Blog: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.homework10: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.homework11: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.homework12: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.homework13: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.homework13: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.homework14: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.homework1: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.homework2: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.homework3: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.homework4: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.homework6: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.homework7: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.homework8: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.homework9: https.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.5017668&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;discord-application&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlserver",
-      "sqlserver.localdb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver&quot;,
+      &quot;sqlserver.localdb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Blog: https">
     <configuration name="AspNetCore" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -1850,7 +1889,19 @@
       <workItem from="1736432954365" duration="3351000" />
       <workItem from="1736437448858" duration="25000" />
       <workItem from="1736437480471" duration="1095000" />
-      <workItem from="1736776875485" duration="926000" />
+      <workItem from="1736776875485" duration="4427000" />
+      <workItem from="1736868502029" duration="979000" />
+      <workItem from="1736880058531" duration="2656000" />
+      <workItem from="1736882789229" duration="992000" />
+      <workItem from="1736883812743" duration="444000" />
+      <workItem from="1736884309417" duration="777000" />
+      <workItem from="1736885102830" duration="30000" />
+      <workItem from="1736885143942" duration="42000" />
+      <workItem from="1736885446028" duration="299000" />
+      <workItem from="1736886141756" duration="229000" />
+      <workItem from="1736886603123" duration="2161000" />
+      <workItem from="1736888798383" duration="89000" />
+      <workItem from="1736888893994" duration="4011000" />
     </task>
     <servers />
   </component>
@@ -1858,8 +1909,13 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.Identity.Client" />
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore.Abstractions" />
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore.Relational" />
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore" />
+  </component>
   <component name="VcsManagerConfiguration">
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1888,5 +1944,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
