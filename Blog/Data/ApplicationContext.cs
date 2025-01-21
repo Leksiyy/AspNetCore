@@ -16,6 +16,7 @@ public class ApplicationContext : IdentityDbContext
     public DbSet<Membership> Memberships { get; set; }
     public DbSet<Category> Categories { get; set; }
     public DbSet<Publication> Publications { get; set; }
+    public DbSet<Subscriber> Subscribers { get; set; }
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -26,6 +27,7 @@ public class ApplicationContext : IdentityDbContext
  
         modelBuilder.Entity<Publication>().Property(e => e.TotalViews).HasDefaultValue(1);
         modelBuilder.Entity<Publication>().Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+        modelBuilder.Entity<Subscriber>().Property(e => e.Date).HasDefaultValueSql("GETDATE()");
  
         base.OnModelCreating(modelBuilder);
     }

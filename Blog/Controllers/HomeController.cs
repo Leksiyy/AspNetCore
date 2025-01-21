@@ -12,12 +12,14 @@ public class HomeController : Controller
     private readonly IPublication _publication;
     private readonly ICategory _category;
     private readonly IWebHostEnvironment _appEnvironment;
+    private readonly ISubscriber _subscribers;
 
-    public HomeController(IPublication publication, ICategory category, IWebHostEnvironment appEnvironment)
+    public HomeController(IPublication publication, ICategory category, IWebHostEnvironment appEnvironment, ISubscriber subscribers)
     {
         _publication = publication;
         _category = category;
         _appEnvironment = appEnvironment;
+        _subscribers = subscribers;
     }
 
     public async Task<IActionResult> Index(QueryOptions? options, string? categoryId)
@@ -46,5 +48,21 @@ public class HomeController : Controller
             });
         }
         return NotFound();
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Subscribe(string email)
+    {
+        if (!await _subscribers.IsSubscribe(email))
+        {
+            await _subscribers.Subscribe(new Subscriber
+            {
+                Email = email,
+            });
+            return Content("Подписка успешно оформлена!");
+        }
+
+        return Content("Вы уже оформили подписку!");
     }
 }   

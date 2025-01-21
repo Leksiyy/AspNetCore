@@ -54,6 +54,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSender", "homework15\E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailService", "homework15\EmailService\EmailService.csproj", "{385CCAC6-2AC6-446F-8CD4-BEFC829B65AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPIdentity", "ASPIdentity\ASPIdentity.csproj", "{90C3DF24-332A-412A-B679-8A95F1E67B03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -160,6 +162,10 @@ Global
 		{385CCAC6-2AC6-446F-8CD4-BEFC829B65AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{385CCAC6-2AC6-446F-8CD4-BEFC829B65AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{385CCAC6-2AC6-446F-8CD4-BEFC829B65AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90C3DF24-332A-412A-B679-8A95F1E67B03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90C3DF24-332A-412A-B679-8A95F1E67B03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90C3DF24-332A-412A-B679-8A95F1E67B03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90C3DF24-332A-412A-B679-8A95F1E67B03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2CB80E68-E33C-4E99-8C4A-491766A11A39} = {52A8E029-34C8-432B-B270-E2C3D7ED0E23}

@@ -27,6 +27,7 @@ builder.Services.AddIdentity<User, IdentityRole>(options =>
 builder.Services.AddTransient<IMembership, MembershipRepository>();
 builder.Services.AddTransient<ICategory, CategoryRepository>();
 builder.Services.AddTransient<IPublication, PublicationRepository>();
+builder.Services.AddTransient<ISubscriber, SubscriberRepository>();
 
 var app = builder.Build();
 
