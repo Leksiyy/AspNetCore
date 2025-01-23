@@ -1,0 +1,12 @@
+@model Articles
+
+<h2>@Model.Title</h2>
+
+<p><strong>Дата публикации:</strong> @Model.PublishDate.ToString("d MMM yyyy")</p>
+
+<div>
+    <h4>Содержание:</h4>
+    <p>@Model.Content</p>
+</div>
+
+<a href="@Url.Action("Index", "Profile")">Вернуться к списку постов</a>

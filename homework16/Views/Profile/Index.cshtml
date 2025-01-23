@@ -1,0 +1,53 @@
+@model homework16.ViewModels.ProfileViewModel
+@{
+    var currentPage = ViewBag.CurrentPage;
+    var totalPages = ViewBag.TotalPages;
+}
+
+<h2>Профиль пользователя</h2>
+
+<div>
+    <h3>Информация о пользователе</h3>
+    <p><strong>Имя пользователя:</strong> @User.Identity.Name</p>
+    <p><strong>Электронная почта:</strong> @User.Identity.</p>
+
+    <a href="@Url.Action("Edit", "Profile")">Редактировать профиль</a>
+</div>
+
+<h3>Мои статьи</h3>
+<div>
+    @if (Model.Articles != null && Model.Articles.Any())
+    {
+        <ul>
+            @foreach (var article in Model.Articles)
+            {
+                <li>
+                    <a href="@Url.Action("Details", "Articles", new { id = article.Id })">@article.Title</a>
+                    <small>Опубликовано: @article.PublishDate.ToString("dd MMM yyyy")</small>
+                </li>
+            }
+        </ul>
+        <div class="pagination">
+            @if (currentPage > 1)
+            {
+                <a href="@Url.Action("Index", new { page = currentPage - 1 })" class="prev">Предыдущая</a>
+            }
+
+            @for (var pageNumber = 1; pageNumber <= totalPages; pageNumber++)
+            {
+                <a href="@Url.Action("Index", new { page =  pageNumber })" class="page-number @(pageNumber == currentPage ? "active" : "")">
+                    @pageNumber
+                </a>
+            }
+
+            @if (currentPage < totalPages)
+            {
+                <a href="@Url.Action("Index", new { page = currentPage + 1 })" class="next">Следующая</a>
+            }
+        </div>
+    }
+    else
+    {
+        <p>У вас нет опубликованных статей.</p>
+    }
+</div>

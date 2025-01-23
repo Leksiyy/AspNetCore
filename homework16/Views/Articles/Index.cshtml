@@ -1,0 +1,37 @@
+@model List<Articles>
+@{
+    var currentPage = ViewBag.CurrentPage;
+    var totalPages = ViewBag.TotalPages;
+}
+
+<h1>Блог</h1>
+
+<div id="post-list">
+    @foreach (var post in Model)
+    {
+        <div class="post">
+            <h3>@post.Title</h3>
+            <p>@post.Content</p>
+            <small>@post.PublishDate.ToString("d MMM yyyy")</small>
+        </div>
+    }
+</div>
+
+<div class="pagination">
+    @if (currentPage > 1)
+    {
+        <a href="@Url.Action("Index", new { page = currentPage - 1 })" class="prev">Предыдущая</a>
+    }
+
+    @for (var pageNumber = 1; pageNumber <= totalPages; pageNumber++)
+    {
+        <a href="@Url.Action("Index", new { page =  pageNumber })" class="page-number @(pageNumber == currentPage ? "active" : "")">
+            @pageNumber
+        </a>
+    }
+
+    @if (currentPage < totalPages)
+    {
+        <a href="@Url.Action("Index", new { page = currentPage + 1 })" class="next">Следующая</a>
+    }
+</div>

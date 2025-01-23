@@ -98,7 +98,7 @@ public class UsersController : Controller
         {
             return NotFound();
         }
-        ChangePasswordViewModel model = new ChangePasswordViewModel { Id = user.Id };
+        ChangePasswordViewModel model = new ChangePasswordViewModel { Id = user.Id, Email = user.Email};
         return View(model);
     }
 
