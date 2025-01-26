@@ -10,8 +10,8 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddAuthentication().AddGoogle(options =>
 {
-    options.ClientId = "XXX";
-    options.ClientSecret = "XXX";
+    options.ClientId = "XXXX";
+    options.ClientSecret = "XXXX";
 });
 
 IConfigurationRoot _confString = new ConfigurationBuilder().

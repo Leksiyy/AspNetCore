@@ -183,7 +183,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "XThreadsFramesViewSplitterKey": "0.5017668",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Rebasing main",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -2195,7 +2195,7 @@
       <workItem from="1737613585212" duration="3139000" />
       <workItem from="1737620205908" duration="16445000" />
       <workItem from="1737709391420" duration="10890000" />
-      <workItem from="1737908760085" duration="866000" />
+      <workItem from="1737908760085" duration="965000" />
     </task>
     <servers />
   </component>
