@@ -89,100 +89,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af3f2fc1-5085-43d1-9404-92342de5394d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/ASPAuthIdentity.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Controllers/AccountController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Controllers/HomeController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Data/ApplicationContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Helpers/EmailHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Models/ErrorViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Models/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/ViewModels/LoginViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/ViewModels/RegisterViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/ViewModels/ResetPasswordViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Views/Account/ConfirmEmail.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Views/Account/Error.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Views/Account/ForgotPassword.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Views/Account/ForgotPasswordConfirmation.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Views/Account/Login.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Views/Account/Register.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Views/Account/ResetPassword.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Views/Account/ResetPasswordConfirmation.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Views/Account/SuccessRegistration.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Views/Home/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Views/Home/Privacy.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Views/Shared/Error.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Views/Shared/_Layout.cshtml.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Views/_ViewImports.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Views/_ViewStart.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/css/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/js/site.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/jquery-validation/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/wwwroot/lib/jquery/dist/jquery.min.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspNetCore.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AspNetCore.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspNetCore.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/AspNetCore.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,13 +193,13 @@
     "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
     "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlserver&quot;,
-      &quot;sqlserver.localdb&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver",
+      "sqlserver.localdb"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ASPAuthIdentity: http">
     <configuration name="ASPIdentitySelfMaded" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -2288,7 +2195,7 @@
       <workItem from="1737613585212" duration="3139000" />
       <workItem from="1737620205908" duration="16445000" />
       <workItem from="1737709391420" duration="10890000" />
-      <workItem from="1737908760085" duration="389000" />
+      <workItem from="1737908760085" duration="866000" />
     </task>
     <servers />
   </component>
