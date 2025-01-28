@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="RD-243.22562.250">
-    <data-source name="Authentication@localhost" uuid="e00459b3-df98-44ba-870d-fafbca5ddfe8">
+    <data-source name="master@localhost" uuid="e00459b3-df98-44ba-870d-fafbca5ddfe8">
       <database-info product="Microsoft SQL Server" version="16.00.1000" jdbc-version="4.2" driver-name="JetBrains JDBC Driver for SQL Server" driver-version="1.0" dbms="MSSQL" exact-version="16.0.1000" exact-driver-version="1.0">
         <extra-name-characters>$#@</extra-name-characters>
         <identifier-quote-string>&quot;</identifier-quote-string>
@@ -11,8 +11,8 @@
       <auth-provider>no-auth</auth-provider>
       <schema-mapping>
         <introspection-scope>
-          <node kind="database" qname="@">
-            <node kind="schema" qname="@" />
+          <node kind="database" qname="Auth">
+            <node kind="schema" qname="dbo" />
           </node>
         </introspection-scope>
       </schema-mapping>

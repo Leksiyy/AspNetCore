@@ -64,6 +64,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework16", "homework16\ho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPAuthIdentity", "ASPIdentity\ASPAuthIdentity\ASPAuthIdentity.csproj", "{B7F15432-3531-42FA-AE89-6153D1EB3095}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework17", "homework17\homework17.csproj", "{FCCBA533-B603-4814-8967-D4DAE5C845D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -186,6 +188,10 @@ Global
 		{B7F15432-3531-42FA-AE89-6153D1EB3095}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7F15432-3531-42FA-AE89-6153D1EB3095}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7F15432-3531-42FA-AE89-6153D1EB3095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCCBA533-B603-4814-8967-D4DAE5C845D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCCBA533-B603-4814-8967-D4DAE5C845D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCCBA533-B603-4814-8967-D4DAE5C845D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCCBA533-B603-4814-8967-D4DAE5C845D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2CB80E68-E33C-4E99-8C4A-491766A11A39} = {52A8E029-34C8-432B-B270-E2C3D7ED0E23}

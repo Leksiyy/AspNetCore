@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "Assign Grade";
+    var students = ViewBag.Students as List<Student>;
+    var subjects = ViewBag.Subjects as List<Subject>;
+}
+
+<h1>Assign Grade</h1>
+
+<form asp-action="AssignGrade" method="post">
+    <div class="form-group">
+        <label for="studentId">Student</label>
+        <select class="form-control" id="studentId" name="studentId" required>
+            <option value="">Select Student</option>
+            @foreach (var student in students)
+            {
+                <option value="@student.Id">@student.Email (@student.Group)</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="subjectId">Subject</label>
+        <select class="form-control" id="subjectId" name="subjectId" required>
+            <option value="">Select Subject</option>
+            @foreach (var subject in subjects)
+            {
+                <option value="@subject.Id">@subject.Name</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="gradeValue">Grade</label>
+        <input type="number" class="form-control" id="gradeValue" name="gradeValue" min="1" max="100" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Assign Grade</button>
+</form>

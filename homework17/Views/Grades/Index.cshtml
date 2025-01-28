@@ -1,0 +1,42 @@
+@model List<homework17.ViewModels.SubjectWithGradesViewModel>
+
+@{
+    ViewData["Title"] = "Your Grades";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (Model.Any())
+{
+    foreach (var subject in Model)
+    {
+        <div class="card mb-3">
+            <div class="card-header">
+                <h4>@subject.SubjectName</h4>
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Grade</th>
+                        <th>Date</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var grade in subject.Grades)
+                    {
+                        <tr>
+                            <td>@grade.Value</td>
+                            <td>@grade.Date.ToString("dd-MM-yyyy")</td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <p>No grades found.</p>
+}

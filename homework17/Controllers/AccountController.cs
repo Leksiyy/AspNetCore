@@ -1,25 +1,26 @@
-
-using ASPIdentitySelfMaded.ViewModels;
+using homework17.Models;
+using homework17.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ASPIdentitySelfMaded.Controllers;
+namespace homework17.Controllers;
 
 public class AccountController : Controller
 {
-    private readonly UserManager<IdentityUser> _userManager;
-    private readonly SignInManager<IdentityUser> _signInManager;
+    private readonly UserManager<Student> _userManager;
+    private readonly SignInManager<Student> _signInManager;
 
-    public AccountController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
+    public AccountController(UserManager<Student> userManager, SignInManager<Student> signInManager)
     {
         _userManager = userManager;
         _signInManager = signInManager;
     }
 
     [HttpGet]
-    public IActionResult Register()
+    public IActionResult Register(string returnUrl = null)
     {
-        return View();
+        return View(returnUrl);
     }
 
     [HttpPost]
@@ -28,7 +29,7 @@ public class AccountController : Controller
     {
         if (ModelState.IsValid)
         {
-            var user = new IdentityUser { UserName = model.Email, Email = model.Email };
+            var user = new Student { UserName = model.Email, Email = model.Email, FirstName = model.FirstName, LastName = model.LastName, Group = model.Group };
             var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {
@@ -47,9 +48,10 @@ public class AccountController : Controller
     }
 
     [HttpGet]
-    public IActionResult Login()
+    public IActionResult Login(string returnUrl = null)
     {
-        return View();
+        var model = new LoginViewModel{ReturnUrl = returnUrl};
+        return View(model);
     }
 
     [HttpPost]
@@ -61,14 +63,7 @@ public class AccountController : Controller
             var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
             if (result.Succeeded)
             {
-                if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
-                {
-                    return Redirect(model.ReturnUrl);
-                }
-                else
-                {
-                    return RedirectToAction("Index", "Home");
-                }
+                return RedirectToAction("Profile", "Account");
             }
             else
             {
@@ -84,5 +79,33 @@ public class AccountController : Controller
     {
         await _signInManager.SignOutAsync();
         return RedirectToAction("Index", "Home");
+    }
+    
+    [Authorize]
+    [HttpGet]
+    public async Task<IActionResult> Profile()
+    {
+        var user = await _userManager.GetUserAsync(User);
+
+        if (user == null)
+        {
+            return RedirectToAction("Login", "Account");
+        }
+
+        var model = new ProfileViewModel
+        {
+            FirstName = user.FirstName,
+            LastName = user.LastName,
+            Email = user.Email,
+            Group = user.Group
+        };
+
+        return View(model);
+    }
+    
+    [HttpGet]
+    public IActionResult AccessDenied(string returnUrl = null)
+    {
+        return View(returnUrl);
     }
 }

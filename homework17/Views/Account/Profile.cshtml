@@ -1,0 +1,22 @@
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model homework17.ViewModels.ProfileViewModel
+
+@{
+    ViewData["Title"] = "Student Profile";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="card">
+    <div class="card-header">
+        <h2>@Model.FirstName @Model.LastName</h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Email:</strong> @Model.Email</p>
+        <p><strong>Group:</strong> @Model.Group</p>
+    </div>
+</div>
+
+<a asp-controller="Account" asp-action="Logout" class="btn btn-danger">Logout</a>
+<a asp-action="AssignGrade" asp-controller="Admin" class="btn btn-warning">Assign grade</a>
+<a asp-action="CreateSubject" asp-controller="Admin" class="btn btn-warning">Create subject</a>

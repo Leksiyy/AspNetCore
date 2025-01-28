@@ -89,7 +89,114 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af3f2fc1-5085-43d1-9404-92342de5394d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Controllers/AccountController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Controllers/AdminController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Controllers/GradesController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Controllers/HomeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Data/ApplicationContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Data/DbInitializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Models/AppSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Models/ErrorViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Models/Grade.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Models/Student.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Models/Subject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/ViewModels/GradeViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/ViewModels/LoginViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/ViewModels/ProfileViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/ViewModels/RegisterViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/ViewModels/SubjectWithGradesViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Views/Account/AccessDenied.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Views/Account/Login.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Views/Account/Profile.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Views/Account/Register.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Views/Admin/AssignGrade.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Views/Admin/CreateSubject.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Views/Grades/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Views/Home/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Views/Home/Privacy.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Views/Shared/Error.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Views/Shared/_Layout.cshtml.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Views/_ViewImports.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/Views/_ViewStart.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/homework17.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/css/site.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/js/site.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/jquery-validation/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework17/wwwroot/lib/jquery/dist/jquery.min.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources/e00459b3-df98-44ba-870d-fafbca5ddfe8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources/e00459b3-df98-44ba-870d-fafbca5ddfe8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources/e00459b3-df98-44ba-870d-fafbca5ddfe8/storage_v2/_src_/database/Authentication.mK7u3Q.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources/e00459b3-df98-44ba-870d-fafbca5ddfe8/storage_v2/_src_/database/Authentication.mK7u3Q/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources/e00459b3-df98-44ba-870d-fafbca5ddfe8/storage_v2/_src_/database/Authentication.mK7u3Q/schema/dbo.sYMBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources/e00459b3-df98-44ba-870d-fafbca5ddfe8/storage_v2/_src_/database/Authentication.mK7u3Q/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASPIdentity/ASPAuthIdentity/Controllers/AccountController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASPIdentity/ASPIdentitySelfMaded/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASPIdentity/ASPIdentitySelfMaded/Controllers/AccountController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspNetCore.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AspNetCore.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +264,7 @@
     ".NET Launch Settings Profile.ASPEntityFrameworkCore: https.executor": "Run",
     ".NET Launch Settings Profile.ASPIdentitySelfMaded: http.executor": "Run",
     ".NET Launch Settings Profile.ASPIdentitySelfMaded: https.executor": "Run",
+    ".NET Launch Settings Profile.ASPIdentityTemplate: http.executor": "Run",
     ".NET Launch Settings Profile.ASPValidation: https.executor": "Run",
     ".NET Launch Settings Profile.ASPViewComponent: https.executor": "Run",
     ".NET Launch Settings Profile.AspNetCore: https.executor": "Run",
@@ -170,6 +278,7 @@
     ".NET Launch Settings Profile.homework13: https.executor": "Run",
     ".NET Launch Settings Profile.homework14: http.executor": "Run",
     ".NET Launch Settings Profile.homework16: http.executor": "Run",
+    ".NET Launch Settings Profile.homework17: http.executor": "Debug",
     ".NET Launch Settings Profile.homework1: https.executor": "Debug",
     ".NET Launch Settings Profile.homework2: https.executor": "Run",
     ".NET Launch Settings Profile.homework3: https.executor": "Run",
@@ -183,14 +292,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "XThreadsFramesViewSplitterKey": "0.5017668",
-    "git-widget-placeholder": "Rebasing main",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
+    "settings.editor.selected.configurable": "CodeLensConfigurable",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -200,7 +309,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.ASPAuthIdentity: http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.homework17: http">
     <configuration name="ASPIdentitySelfMaded" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -1581,6 +1690,51 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="homework17: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/homework17/homework17.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="homework17: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/homework17/homework17.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="homework17: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/homework17/homework17.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="https" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="homework1: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/homework1/homework1.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -2196,6 +2350,11 @@
       <workItem from="1737620205908" duration="16445000" />
       <workItem from="1737709391420" duration="10890000" />
       <workItem from="1737908760085" duration="965000" />
+      <workItem from="1737978909977" duration="5945000" />
+      <workItem from="1738005957750" duration="1754000" />
+      <workItem from="1738011350580" duration="3118000" />
+      <workItem from="1738054134325" duration="6053000" />
+      <workItem from="1738061526351" duration="9285000" />
     </task>
     <servers />
   </component>
