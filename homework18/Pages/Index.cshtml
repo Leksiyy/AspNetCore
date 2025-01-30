@@ -5,7 +5,6 @@
 }
 
 <style>
-    /* Стили для таблицы */
     .todo-table {
         margin-top: 20px;
         width: 100%;
@@ -23,14 +22,12 @@
     .todo-table td {
         background-color: #ffffff;
     }
-
-    /* Кнопки для добавления/удаления/редактирования */
+    
     .todo-btn {
         width: 100px;
         margin: 0;
     }
-
-    /* Стили для формы добавления задачи */
+    
     .todo-input {
         width: 200px;
     }
@@ -38,8 +35,7 @@
     .todo-status {
         font-size: 16px;
     }
-
-    /* Flexbox для поля ввода и кнопки в одной строке */
+    
     .edit-form {
         display: flex;
         justify-content: space-between;
@@ -47,7 +43,7 @@
         align-items: center;
     }
     .edit-form input {
-        flex-grow: 1; /* Поле ввода займет оставшееся место */
+        flex-grow: 1;
     }
 </style>
 
@@ -64,7 +60,6 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Форма для добавления задачи -->
             <tr>
                 <form method="post" asp-page-handler="Add">
                     <td>—</td>
@@ -80,8 +75,7 @@
                     </td>
                 </form>
             </tr>
-
-            <!-- Список задач -->
+            
             @foreach (var todo in Model.ToDos)
             {
                 <tr>

@@ -16,10 +16,8 @@ public class LogoutModel : PageModel
 
     public async Task<IActionResult> OnPostAsync()
     {
-        // Выход из системы
         await _signInManager.SignOutAsync();
-
-        // Перенаправление на главную страницу или на returnUrl
+        
         return RedirectToPage("/Index");
     }
 }
