@@ -1,0 +1,116 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<style>
+    /* Стили для таблицы */
+    .todo-table {
+        margin-top: 20px;
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .todo-table th, .todo-table td {
+        text-align: center;
+        vertical-align: middle;
+        padding: 10px;
+    }
+    .todo-table th {
+        background-color: #f8f9fa;
+        font-weight: bold;
+    }
+    .todo-table td {
+        background-color: #ffffff;
+    }
+
+    /* Кнопки для добавления/удаления/редактирования */
+    .todo-btn {
+        width: 100px;
+        margin: 0;
+    }
+
+    /* Стили для формы добавления задачи */
+    .todo-input {
+        width: 200px;
+    }
+    
+    .todo-status {
+        font-size: 16px;
+    }
+
+    /* Flexbox для поля ввода и кнопки в одной строке */
+    .edit-form {
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        align-items: center;
+    }
+    .edit-form input {
+        flex-grow: 1; /* Поле ввода займет оставшееся место */
+    }
+</style>
+
+<div class="container mt-4">
+    <h2>ToDo List</h2>
+    <table class="table table-bordered todo-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Status</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Форма для добавления задачи -->
+            <tr>
+                <form method="post" asp-page-handler="Add">
+                    <td>—</td>
+                    <td>
+                        <input type="text" name="toDo.Title" class="form-control todo-input" required placeholder="Enter task">
+                    </td>
+                    <td>
+                        <input type="hidden" name="toDo.IsDone" value="false">
+                        <input type="checkbox" name="toDo.IsDone" value="true">
+                    </td>
+                    <td>
+                        <button type="submit" class="btn btn-success todo-btn">Add</button>
+                    </td>
+                </form>
+            </tr>
+
+            <!-- Список задач -->
+            @foreach (var todo in Model.ToDos)
+            {
+                <tr>
+                    <td>@todo.Id</td>
+                    <td>@todo.Title</td>
+                    <td class="todo-status">
+                        <form method="post" asp-page-handler="Done">
+                            <input type="hidden" name="id" value="@todo.Id"/>
+                            <button type="submit" class="btn btn-link btn-sm">
+                                <span>@(todo.IsDone ? "✅ Done" : "❌ Not Done")</span>
+                            </button>
+                        </form> 
+                    </td>
+                    <td>
+                        <form method="post" asp-page-handler="Delete" asp-route-id="@todo.Id">
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form method="post" asp-page-handler="Edit">
+                            <div class="edit-form">
+                                <input type="hidden" name="Id" value="@todo.Id"/>
+                                <input type="text" name="NewTitle" value="@todo.Title" class="form-control" required/>
+                                <button type="submit" class="btn btn-primary btn-sm">Edit</button>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

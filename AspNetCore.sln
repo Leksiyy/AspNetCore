@@ -66,6 +66,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPAuthIdentity", "ASPIdent
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework17", "homework17\homework17.csproj", "{FCCBA533-B603-4814-8967-D4DAE5C845D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPRazorPages", "ASPRazorPages\ASPRazorPages.csproj", "{54386459-9302-497F-9BD6-148BE1114DB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework18", "homework18\homework18.csproj", "{4675086D-2363-47BC-8E0D-52E66959199B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -192,6 +196,14 @@ Global
 		{FCCBA533-B603-4814-8967-D4DAE5C845D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCCBA533-B603-4814-8967-D4DAE5C845D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCCBA533-B603-4814-8967-D4DAE5C845D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54386459-9302-497F-9BD6-148BE1114DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54386459-9302-497F-9BD6-148BE1114DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54386459-9302-497F-9BD6-148BE1114DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54386459-9302-497F-9BD6-148BE1114DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4675086D-2363-47BC-8E0D-52E66959199B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4675086D-2363-47BC-8E0D-52E66959199B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4675086D-2363-47BC-8E0D-52E66959199B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4675086D-2363-47BC-8E0D-52E66959199B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2CB80E68-E33C-4E99-8C4A-491766A11A39} = {52A8E029-34C8-432B-B270-E2C3D7ED0E23}
