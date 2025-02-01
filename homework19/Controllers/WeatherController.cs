@@ -2,7 +2,7 @@ using System.Text.Json;
 using homework19.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
-namespace homework19.Controllers
+namespace homework19.Controllers;
 
 public class WeatherController : Controller
 {
