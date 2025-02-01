@@ -88,6 +88,9 @@
     <projectFile profileName="IIS Express">homework18/homework18.csproj</projectFile>
     <projectFile profileName="http">homework18/homework18.csproj</projectFile>
     <projectFile profileName="https">homework18/homework18.csproj</projectFile>
+    <projectFile profileName="IIS Express">homework19/homework19.csproj</projectFile>
+    <projectFile profileName="http">homework19/homework19.csproj</projectFile>
+    <projectFile profileName="https">homework19/homework19.csproj</projectFile>
     <projectFile profileName="http">homework2/homework2.csproj</projectFile>
     <projectFile profileName="https">homework2/homework2.csproj</projectFile>
     <projectFile profileName="http">homework3/homework3.csproj</projectFile>
@@ -113,47 +116,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af3f2fc1-5085-43d1-9404-92342de5394d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ASPWebApi/ASPWebApi.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi/ASPWebApi.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi/wwwroot/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi2/ASPWebApi2.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi2/ASPWebApi2.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi2/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi2/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi2/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi2/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/ASPWebApi3.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/ASPWebApi3.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/Controllers/TodoController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/Data/ApplicationContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/Migrations/20250131133459_Initial.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/Migrations/20250131133459_Initial.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/Migrations/ApplicationContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/Models/TodoItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/Models/TodoItemDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/WeatherForecast.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/wwwroot/css/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/wwwroot/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApi3/wwwroot/js/site.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApiSelfMaded/ASPWebApiSelfMaded.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApiSelfMaded/Controllers/UsersController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApiSelfMaded/Data/ApplicationContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApiSelfMaded/Models/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApiSelfMaded/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApiSelfMaded/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApiSelfMaded/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASPWebApiSelfMaded/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources/4220d67f-e9a5-413d-8d83-619e9ca9bc49.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources/4220d67f-e9a5-413d-8d83-619e9ca9bc49.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources/e00459b3-df98-44ba-870d-fafbca5ddfe8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/dataSources/e00459b3-df98-44ba-870d-fafbca5ddfe8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework19/Controllers/WeatherController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework19/ViewModels/WeatherViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework19/Views/Weather/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AspNetCore.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AspNetCore.sln" afterDir="false" />
     </list>
@@ -247,6 +212,7 @@
     ".NET Launch Settings Profile.homework16: http.executor": "Run",
     ".NET Launch Settings Profile.homework17: http.executor": "Run",
     ".NET Launch Settings Profile.homework18: http.executor": "Run",
+    ".NET Launch Settings Profile.homework19: http.executor": "Run",
     ".NET Launch Settings Profile.homework1: https.executor": "Debug",
     ".NET Launch Settings Profile.homework2: https.executor": "Run",
     ".NET Launch Settings Profile.homework3: https.executor": "Run",
@@ -278,7 +244,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.ASPWebApi3: http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.homework19: http">
     <configuration name="ASPIdentitySelfMaded" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -2019,6 +1985,51 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="homework19: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/homework19/homework19.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="homework19: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/homework19/homework19.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="homework19: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/homework19/homework19.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="https" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="homework1: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/homework1/homework1.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -2687,7 +2698,8 @@
       <workItem from="1738225414311" duration="20462000" />
       <workItem from="1738311270688" duration="1604000" />
       <workItem from="1738329212901" duration="3890000" />
-      <workItem from="1738333390474" duration="1758000" />
+      <workItem from="1738333390474" duration="2702000" />
+      <workItem from="1738412602138" duration="709000" />
     </task>
     <servers />
   </component>

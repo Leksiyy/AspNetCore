@@ -80,6 +80,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPWebApiSelfMaded", "ASPWe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPWebApi3", "ASPWebApi3\ASPWebApi3.csproj", "{B0080C9F-0D7F-4DA0-8E2E-9C2F9A32D646}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework19", "homework19\homework19.csproj", "{6ACF64E4-681D-4D71-B2F1-06A400F8CBF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -230,6 +232,10 @@ Global
 		{B0080C9F-0D7F-4DA0-8E2E-9C2F9A32D646}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0080C9F-0D7F-4DA0-8E2E-9C2F9A32D646}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0080C9F-0D7F-4DA0-8E2E-9C2F9A32D646}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ACF64E4-681D-4D71-B2F1-06A400F8CBF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ACF64E4-681D-4D71-B2F1-06A400F8CBF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ACF64E4-681D-4D71-B2F1-06A400F8CBF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ACF64E4-681D-4D71-B2F1-06A400F8CBF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2CB80E68-E33C-4E99-8C4A-491766A11A39} = {52A8E029-34C8-432B-B270-E2C3D7ED0E23}

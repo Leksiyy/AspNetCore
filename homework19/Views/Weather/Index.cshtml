@@ -1,0 +1,30 @@
+@model homework19.ViewModels.WeatherViewModel
+
+@{
+    ViewData["Title"] = "Погода";
+}
+
+<h1>Узнайте текущую погоду</h1>
+
+<form asp-action="Index" method="post">
+    <input type="text" name="city" placeholder="Введите название города" required />
+    <button type="submit">Получить погоду</button>
+</form>
+
+@if(ViewBag.Error != null)
+{
+    <div style="color:red; margin-top: 20px;">
+        @ViewBag.Error
+    </div>
+}
+
+@if(Model != null)
+{
+    <div style="margin-top:20px; padding:10px; border:1px solid #ddd; background-color:#f9f9f9;">
+        <h2>Погода в городе @Model.City</h2>
+        <p><strong>Температура:</strong> @Model.Temperature °C</p>
+        <p><strong>Ощущается как:</strong> @Model.FeelsLike °C</p>
+        <p><strong>Влажность:</strong> @Model.Humidity %</p>
+        <p><strong>Описание:</strong> @Model.Description</p>
+    </div>
+}
