@@ -116,11 +116,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af3f2fc1-5085-43d1-9404-92342de5394d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/homework19/Controllers/WeatherController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework19/ViewModels/WeatherViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework19/Views/Weather/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspNetCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspNetCore.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AspNetCore.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework19/Controllers/WeatherController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/homework19/Controllers/WeatherController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2699,7 +2696,7 @@
       <workItem from="1738311270688" duration="1604000" />
       <workItem from="1738329212901" duration="3890000" />
       <workItem from="1738333390474" duration="2702000" />
-      <workItem from="1738412602138" duration="709000" />
+      <workItem from="1738412602138" duration="924000" />
     </task>
     <servers />
   </component>
